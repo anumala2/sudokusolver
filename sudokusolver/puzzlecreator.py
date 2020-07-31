@@ -43,5 +43,6 @@ def create_finished_puzzle(SIZE):
 
 def create_finished_puzzle_recurse():
     #trying to make a recursive implementation of board creation
+    return True
 
 create_finished_puzzle(6)
