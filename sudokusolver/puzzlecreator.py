@@ -10,9 +10,10 @@ def valid_insert_size6(num, board, i, j):
         if board[i][col] == num:
             return False
     print("passcol")
+    print(board)
     for row in range(0, i):
         if board[row][j] == num:
-            print(j)
+            print(row, num)
             return False
     #print("passmain")
     startbox = [int(i/2)*2, int(j/3)*3]
@@ -39,5 +40,8 @@ def create_finished_puzzle(SIZE):
                         board[i][j] = temp
                         filled = True
     print(board)
+
+def create_finished_puzzle_recurse():
+    #trying to make a recursive implementation of board creation
 
 create_finished_puzzle(6)
